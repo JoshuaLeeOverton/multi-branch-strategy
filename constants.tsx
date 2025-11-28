@@ -82,6 +82,7 @@ export const APP_ROUTES: RouteConfig[] = [
     id: "legacy",
     path: "/legacy",
     title: "Legacy Workflows",
+    disabled: true,
     icon: BugReport,
     component: () => (
       <DynamicPage title="Legacy" description="This content is deprecated." />
@@ -136,4 +137,3 @@ export const APP_ROUTES: RouteConfig[] = [
     )
   }
 ]
-
