@@ -81,6 +81,7 @@ export const APP_ROUTES: RouteConfig[] = [
   {
     id: "legacy",
     path: "/legacy",
+    disabled: true,
     title: "Legacy Workflows",
     icon: BugReport,
     component: () => (
