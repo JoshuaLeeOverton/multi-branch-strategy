@@ -45,6 +45,7 @@ export const APP_ROUTES: RouteConfig[] = [
         path: "gitflow",
         title: "Git Flow",
         icon: CallSplit,
+        disabled: true,
         component: () => (
           <DynamicPage
             title="Git Flow"
@@ -57,6 +58,7 @@ export const APP_ROUTES: RouteConfig[] = [
         path: "trunk-based",
         title: "Trunk Based",
         icon: MergeType,
+        disabled: true,
         component: () => (
           <DynamicPage
             title="Trunk Based Development"
@@ -136,4 +138,3 @@ export const APP_ROUTES: RouteConfig[] = [
     )
   }
 ]
-
