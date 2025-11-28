@@ -9,7 +9,9 @@ import {
   AccountTree,
   BugReport,
   Science,
-  SmartToy
+  SmartToy,
+  Code,
+  Flag
 } from "@mui/icons-material"
 import DynamicPage from "./components/DynamicPage"
 import AiAdvisor from "./components/AiAdvisor"
@@ -26,6 +28,15 @@ export const APP_ROUTES: RouteConfig[] = [
         title="Dashboard"
         description="Welcome to the Branching Strategy Manager. Select a strategy from the sidebar to view details."
       />
+    )
+  },
+  {
+    id: "features",
+    path: "/features",
+    title: "Feature Flag",
+    icon: Flag,
+    component: () => (
+      <DynamicPage title="Feature Flags" description="How to: feature flags" />
     )
   },
   {
@@ -79,6 +90,18 @@ export const APP_ROUTES: RouteConfig[] = [
         )
       }
     ]
+  },
+  {
+    id: "code",
+    path: "/code",
+    title: "Code Best Practices",
+    icon: Code,
+    component: () => (
+      <DynamicPage
+        title="Code Best Practices"
+        description="This content is for what are code best practices"
+      />
+    )
   },
   {
     id: "legacy",
